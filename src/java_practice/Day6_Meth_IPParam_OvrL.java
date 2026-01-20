@@ -1,6 +1,6 @@
 package java_practice;
 
-public class Day6_Login {
+public class Day6_Meth_IPParam_OvrL {
 
 	public static void main(String[] args) {
 		accountStatement();
