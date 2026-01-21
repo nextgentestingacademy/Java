@@ -29,7 +29,6 @@ public class Day6_Meth_IPParam_OvrL {
 		System.out.println("Validate home page");
 	}
 	
-
 	static void login(String gmailID) {
 		System.out.println("Entered gmailID: " + gmailID);
 		System.out.println("Clicked Login button");
@@ -44,7 +43,7 @@ public class Day6_Meth_IPParam_OvrL {
 	}
 	
 	static void fundTransfer() {
-		login("rahul.kamat","pass@123");
+		login(98989898);
 		
 		//below code for fund transfer
 		System.out.println("Transferred funds from account 1 to 2");
