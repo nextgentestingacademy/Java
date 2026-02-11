@@ -1,6 +1,13 @@
 package java_practice;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Scanner;
+
 public class ErrorHandling {
+	
+	
 
 	public static void main(String[] args) {
 		int a = 10;
@@ -8,9 +15,12 @@ public class ErrorHandling {
 		try {
 			int result = a/0;
 			System.out.println("Result: " + result);
-		} catch (Exception e) {
+		}catch (ArithmeticException | NullPointerException e) {
 			System.out.println("Error: Division by zero is not allowed." + e.getMessage());
-		}finally {
+		}catch (Exception e) {
+			System.out.println("An unexpected error occurred: " + e.getMessage());
+		}
+		finally {
 			System.out.println("Executing finally block.");
 		}
 		
